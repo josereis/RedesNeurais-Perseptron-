@@ -1,5 +1,7 @@
 package br.ufpi.ia.rede;
 
+import java.util.Arrays;
+
 import br.ufpi.ia.funcaoativacao.FuncaoDegrau;
 import br.ufpi.ia.neuronios.Neuronio;
 
@@ -80,10 +82,11 @@ public class Perceptron extends Neuronio {
 		} while(erro && this.epocas < epocas);
 	}
 	
-	public void executar(double [] entradas) {
-		somatorio(entradas);
+	public void executar(double [] entrada) {
+		somatorio(entrada);
 		ativarNeuronio();
 		
+		strResult.append("\nEntrada = " + Arrays.toString(entrada) +" -> Saida = "	+ this.getSaida());
 		System.out.println("Saida = " + this.getSaida());
 	}
 

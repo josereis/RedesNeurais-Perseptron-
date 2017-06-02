@@ -180,7 +180,7 @@ public class MultiLayerPerceptron {
 			
 			camadaSaida.combinarEntradas(camadasIntermediarias.get(camadasIntermediarias.size() - 1).getSaida());
 			camadaSaida.gerarSaida();
-			strResult.append("\nSaida "	+ Arrays.toString(camadaSaida.getSaida()));
+			strResult.append("\nEntrada = "+ Arrays.toString(entrada) +" -> Saida = "	+ Math.round(camadaSaida.getSaida()[0]) + " (valor real da saida = " + Arrays.toString(camadaSaida.getSaida()) + ")");
 		} else {
 			camadaSaida.combinarEntradas(entrada);
 			camadaSaida.gerarSaida();
