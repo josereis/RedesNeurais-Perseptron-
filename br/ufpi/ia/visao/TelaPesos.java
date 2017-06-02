@@ -62,57 +62,57 @@ public class TelaPesos {
 		frmConfigurarRede.getContentPane().setLayout(null);
 		
 		JLabel lblCamada = new JLabel("Camada 1");
-		lblCamada.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblCamada.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblCamada.setBounds(98, 11, 75, 14);
 		frmConfigurarRede.getContentPane().add(lblCamada);
 		
 		JLabel lblCamada_1 = new JLabel("Camada 2");
-		lblCamada_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblCamada_1.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblCamada_1.setBounds(98, 169, 75, 14);
 		frmConfigurarRede.getContentPane().add(lblCamada_1);
 		
 		JLabel lblNeuronio = new JLabel("Neuronio 1");
-		lblNeuronio.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNeuronio.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNeuronio.setBounds(10, 38, 75, 14);
 		frmConfigurarRede.getContentPane().add(lblNeuronio);
 		
 		JLabel lblNeuronio_1 = new JLabel("Neuronio 2");
-		lblNeuronio_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNeuronio_1.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNeuronio_1.setBounds(10, 106, 75, 14);
 		frmConfigurarRede.getContentPane().add(lblNeuronio_1);
 		
 		JLabel lblNeuronio_2 = new JLabel("Neuronio 3");
-		lblNeuronio_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNeuronio_2.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNeuronio_2.setBounds(10, 193, 75, 14);
 		frmConfigurarRede.getContentPane().add(lblNeuronio_2);
 		
 		JLabel lblNewLabel = new JLabel("W1");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNewLabel.setBounds(20, 74, 46, 14);
 		frmConfigurarRede.getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("W2");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNewLabel_1.setBounds(168, 74, 46, 14);
 		frmConfigurarRede.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("W3");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNewLabel_2.setBounds(20, 139, 46, 14);
 		frmConfigurarRede.getContentPane().add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("W4");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNewLabel_3.setBounds(168, 139, 46, 14);
 		frmConfigurarRede.getContentPane().add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("W5");
-		lblNewLabel_4.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_4.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNewLabel_4.setBounds(19, 234, 46, 14);
 		frmConfigurarRede.getContentPane().add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("W6");
-		lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 10));
 		lblNewLabel_5.setBounds(170, 233, 46, 14);
 		frmConfigurarRede.getContentPane().add(lblNewLabel_5);
 		
@@ -146,8 +146,8 @@ public class TelaPesos {
 		textw6.setBounds(229, 229, 75, 20);
 		frmConfigurarRede.getContentPane().add(textw6);
 		
-		JLabel label = new JLabel("\u03B7");
-		label.setFont(new Font("Tahoma", Font.BOLD, 14));
+		JLabel label = new JLabel("T.A");
+		label.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label.setBounds(44, 293, 28, 14);
 		frmConfigurarRede.getContentPane().add(label);
 		
@@ -156,8 +156,8 @@ public class TelaPesos {
 		taxa.setBounds(76, 292, 75, 20);
 		frmConfigurarRede.getContentPane().add(taxa);
 		
-		JLabel label_1 = new JLabel(" \u03B8");
-		label_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		JLabel label_1 = new JLabel("Lim");
+		label_1.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_1.setBounds(168, 295, 46, 14);
 		frmConfigurarRede.getContentPane().add(label_1);
 		

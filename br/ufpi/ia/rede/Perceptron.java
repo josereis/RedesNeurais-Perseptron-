@@ -16,7 +16,7 @@ public class Perceptron extends Neuronio {
 		this.epocas = epocas;
 	}
 
-	public boolean isStatusPesos() {
+	public boolean getStatusPesos() {
 		return statusPesos;
 	}
 

@@ -33,7 +33,7 @@ public class MultiLayerPerceptron {
 		this.erroMedio = erroMedio;
 	}
 
-	public boolean isStatusPesos() {
+	public boolean getStatusPesos() {
 		return statusPesos;
 	}
 
@@ -65,6 +65,14 @@ public class MultiLayerPerceptron {
 		this.strResult = strResult;
 	}
 	
+	public void setarPesos(double [] pesos1, double [] pesos2, double [] pesos3) {
+		inicializarPesos(2);
+		
+		camadasIntermediarias.get(0).getNeuronios().get(0).setPesos(pesos1);
+		camadasIntermediarias.get(0).getNeuronios().get(1).setPesos(pesos2);
+		camadaSaida.getNeuronios().get(0).setPesos(pesos3);
+	}
+	
 	private void ajustarCamadasIntermediarias(double [][] entradas, double taxaAprendizagem, int i) {
 		camadasIntermediarias.get(camadasIntermediarias.size() - 1).calcularGradiente(camadaSaida);
 		
@@ -88,19 +96,6 @@ public class MultiLayerPerceptron {
 	}
 	
 	public void inicializarPesos(int tamanho) {
-		if(camadasIntermediarias.size() > 0) {
-			camadasIntermediarias.get(0).gerarPesos(tamanho);
-			
-			for(int i = 1; i < camadasIntermediarias.size(); i++) {
-				camadasIntermediarias.get(i).gerarPesos(camadasIntermediarias.get(i - 1).getQuantidadeNeuronios());
-			}
-			camadaSaida.gerarPesos(camadasIntermediarias.get(camadasIntermediarias.size() - 1).getQuantidadeNeuronios());
-		} else {
-			camadaSaida.gerarPesos(tamanho);
-		}
-	}
-	
-	public void inicializarPesosEntrada(int tamanho, double pesoA, double pesoB) {
 		if(camadasIntermediarias.size() > 0) {
 			camadasIntermediarias.get(0).gerarPesos(tamanho);
 			
